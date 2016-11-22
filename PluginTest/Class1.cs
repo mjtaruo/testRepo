@@ -21,6 +21,7 @@ namespace LeadActiveQuestions
             // set default credentials for OrganizationService
             //credentials.Windows.ClientCredential = (NetworkCredential)CredentialCache.DefaultCredentials;
             // or
+            //and
             credentials.Windows.ClientCredential = System.Net.CredentialCache.DefaultNetworkCredentials;
             OrganizationServiceProxy orgProxy = new OrganizationServiceProxy(organizationUri, homeRealmUri, credentials, null);
             // This statement is required to enable early-bound type support.
